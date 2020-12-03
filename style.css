@@ -5,18 +5,15 @@
     color:black;
     text-decoration: none;
   }
-  #active {
-    color:red;
-  }
   h1 {
     font-size: 400%;
     text-align: center;
-    border-bottom:2px solid gray;
+    border-bottom:2px solid #519D9E;
     margin:0;
     padding:20px;
   }
   ol{
-    border-right:1px solid gray;
+    border-right:1px solid #519D9E;
     width:120px;
     margin:0;
 

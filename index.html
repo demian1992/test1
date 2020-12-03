@@ -17,6 +17,32 @@
 
 <body>
   <h1><a href="index.html">골단이</a></h1>
+  <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+  if(this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = '#9DC8C8';
+        i = i + 1;
+      }
+    } else {
+      target.style.backgroundColor = '#D1B6E1';
+      target.style.color = 'black';
+      this.value = 'night';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = '#519D9E';
+        i = i + 1;
+      }
+    }
+  ">
   <div id="grid">
     <ol>
       <li><a href="1.html">김골단 info</a></li>
@@ -25,24 +51,10 @@
       <li><a href="clip.html">클립모음집</a></li>
     </ol>
   <div id="article">
-    <img src="goldphoto2.jpg" width="80%">
+    <img src="goldphoto2.jpg" width="70%">
 
   </div>
   </div>
-
-  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5fc645a5a1d54c18d8ef3a9e/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
 
 </body>
 </html>
